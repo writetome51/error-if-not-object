@@ -1,22 +1,22 @@
-# isObject(arg): boolean
+# errorIfNotObject(arg): void
 
-Returns true if `arg` is array or object.  
-Does not consider null an object.
+Triggers error if `arg` is not an object.  Arrays are considered objects.  Null is not.
 
-# notObject(arg): boolean
-
-Returns true if `arg` is null, undefined, function, symbol, number, boolean,  
-or string.
+## Examples
+```
+errorIfNotObject({}); // no error.
+errorIfNotObject([]); // no error.
+errorIfNotObject(null); // Error: "Input must be object"
+```
 
 
 ## Installation
-`npm i  @writetome51/is-object-not-object`
+`npm i  @writetome51/error-if-not-object`
 
 ## Loading
 ```
 // if using TypeScript:
-import { isObject, notObject } from '@writetome51/is-object-not-object';
+import { errorIfNotObject} from '@writetome51/error-if-not-object';
 // if using ES5 JavaScript:
-var isObject = require('@writetome51/is-object-not-object').isObject;
-var notObject = require('@writetome51/is-object-not-object').notObject;
+var errorIfNotObject = require('@writetome51/error-if-not-object').errorIfNotObject;
 ```
