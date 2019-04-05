@@ -27,5 +27,6 @@
   },
   "homepage": "https://github.com/writetome51/error-if-not-object#readme",
   "dependencies": {
+    "@writetome51/is-object-not-object": "~1.0.0"
   }
 }
