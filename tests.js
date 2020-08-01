@@ -1,4 +1,5 @@
-let errorIfNotObject = require('./index').errorIfNotObject;
+import {errorIfNotObject} from './index.js';
+
 
 errorIfNotObject({}); // no error.
 errorIfNotObject([]); // no error.
