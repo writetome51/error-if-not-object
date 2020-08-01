@@ -1,7 +1,8 @@
 {
   "name": "error-if-not-object",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Function triggers error is passed argument is not an object.  Arrays are considered objects. Nulls are not",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,6 +28,6 @@
   },
   "homepage": "https://github.com/writetome51/error-if-not-object#readme",
   "dependencies": {
-    "@writetome51/is-object-not-object": "~1.0.0"
+    "@writetome51/is-object-not-object": "^2.0.0"
   }
 }

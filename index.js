@@ -1,11 +1,8 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", {value: true});
-var isObject_notObject = require("@writetome51/is-object-not-object");
+import {notObject} from '@writetome51/is-object-not-object';
 
 
-// Arrays ARE considered objects.  Nulls are NOT.
+// Arrays are considered objects.  Nulls are not.
 
-function errorIfNotObject(arg) {
-	if (isObject_notObject.notObject(arg)) throw new Error('Input must be object');
+export function errorIfNotObject(arg) {
+	if (notObject(arg)) throw new Error('Input must be object');
 }
-exports.errorIfNotObject = errorIfNotObject;

@@ -17,13 +17,9 @@ errorIfNotObject(str); // no error.
 
 
 ## Installation
-`npm i  @writetome51/error-if-not-object`
+`npm i  error-if-not-object`
 
 ## Loading
-```
-// if using TypeScript:
-import { errorIfNotObject} from '@writetome51/error-if-not-object';
-// if using ES5 JavaScript:
-var errorIfNotObject = 
-     require('@writetome51/error-if-not-object').errorIfNotObject;
+```js
+import { errorIfNotObject} from 'error-if-not-object';
 ```
